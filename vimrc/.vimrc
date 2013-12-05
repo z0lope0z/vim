@@ -12,3 +12,4 @@ set shiftwidth=4
 set smartindent
 nmap <C-e> :e#<CR>
 set clipboard=unnamedplus
+autocmd vimenter * NERDTree
