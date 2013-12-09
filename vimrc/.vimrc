@@ -10,6 +10,15 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set smartindent
+set modifiable
 nmap <C-e> :e#<CR>
+imap ii <Esc> 
+map <leader>c <c-_><c-_>
 set clipboard=unnamedplus
 autocmd vimenter * NERDTree
+"split
+set splitbelow
+set splitright
+" django stuff
+let g:tcommentGuessFileType_htmldjango = 1
+
