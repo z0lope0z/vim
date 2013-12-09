@@ -23,7 +23,9 @@ autocmd vimenter * NERDTree
 set splitbelow
 set splitright
 "django stuff
-let g:tcommentGuessFileType_htmldjango = 1
+let g:tcommentguessfiletype_htmldjango = 1
 "show some autocomplete options in status bar
 set wildmenu
 set smarttab
+au InsertEnter * hi StatusLine term=reverse ctermbg=22 gui=bold,reverse guisp=Green
+au InsertLeave * hi StatusLine term=reverse ctermbg=24 gui=undercurl guisp=Blue
