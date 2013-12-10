@@ -14,9 +14,19 @@ set smartindent
 set modifiable
 set backspace=indent,eol,start 
 nmap <C-e> :e#<CR>
-imap jj <Esc> 
+imap jk <Esc> 
 map <leader>c <c-_><c-_>
-inoremap <Nul> <C-n>
+"inoremap <Nul> <C-n>
+"quick movements
+inoremap AA <Esc>I
+inoremap BB <Esc>Bi
+inoremap EE <Esc>A
+inoremap OO <Esc>o
+inoremap CC <Esc>C
+inoremap WW <Esc>w
+inoremap SS <Esc>S
+inoremap DD <Esc>dd
+inoremap UU <Esc>u
 set clipboard=unnamedplus
 autocmd vimenter * NERDTree
 "split
