@@ -28,7 +28,9 @@ inoremap SS <Esc>S
 inoremap DD <Esc>dd
 inoremap UU <Esc>u
 set clipboard=unnamedplus
-autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree | wincmd p
+"map <C-t> :NERDTreeToggle<CR>
+nmap <silent> <special> <C-t> :NERDTreeToggle<RETURN>
 "split
 set splitbelow
 set splitright
