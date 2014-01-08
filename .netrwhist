@@ -1,10 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/lope/Projects/AI/a*'
-let g:netrw_dirhist_2='/home/lope/Save22/server/Lobang-Club-Django-Backend'
-let g:netrw_dirhist_3='/home/lope/.vim'
-let g:netrw_dirhist_4='/home/lope'
-let g:netrw_dirhist_5='/home/lope/Save22/server/Lobang-Club-Django-Backend'
-let g:netrw_dirhist_6='/home/lope/.virtualenvs/python2.7'
-let g:netrw_dirhist_7='/home/lope/Save22/server/Lobang-Club-Django-Backend'
-let g:netrw_dirhist_8='/home/lope'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/lope'
+let g:netrw_dirhist_2='/home/lope/.vim'
+let g:netrw_dirhist_3='/home/lope/Save22/server/Save22-Oscar-Backend/save22oscar'
+let g:netrw_dirhist_4='/home/lope/Save22/server/Lobang-Club-Django-Backend'
+let g:netrw_dirhist_5='/home/lope/Save22/server/Save22-Oscar-Backend/save22oscar'
+let g:netrw_dirhist_6='/home/lope/.vim/snippets'
