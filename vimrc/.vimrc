@@ -2,6 +2,7 @@ call pathogen#incubate()
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
+set hidden "hidden buffers enabled
 set hlsearch "highlight search
 set number "line number
 set mouse=a "mouse clickable
