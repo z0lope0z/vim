@@ -18,6 +18,7 @@ set linebreak
 nmap <C-e> :e#<CR>
 imap jk <Esc> 
 map <leader>c <c-_><c-_>
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 "inoremap <Nul> <C-n>
 "quick movements
 inoremap AA <Esc>I
@@ -33,9 +34,23 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+"quick save
+noremap <C-Z> :update<C-R>
+vnoremap <C-Z> <C-C>:update<C-R>
+inoremap <C-Z> <C-O>:update<C-R>
+"sudo save
+command W w !sudo tee % >/dev/null
+"sorting
+vnoremap <Leader>s :sort<CR>
+"white space viewing
+set listchars="tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
 set splitbelow
 set splitright
 set clipboard=unnamedplus
+"swap colon and semi-colon
+nnoremap ; :
+nnoremap : ;
 autocmd vimenter * NERDTree | wincmd p
 nmap <silent> <special> <C-t> :NERDTreeToggle<RETURN>
 "split
