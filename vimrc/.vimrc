@@ -2,11 +2,20 @@ call pathogen#incubate()
 call pathogen#infect()
 call pathogen#helptags()
 syntax on
+"auto reload .vimrc
+autocmd! bufwritepost .vimrc source %
+"rebind leader key
+let mapleader=","
 set hidden "hidden buffers enabled
-set hlsearch "highlight search
 set number "line number
 set mouse=a "mouse clickable
 colors jellybeans
+"search improvements
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+"python
 set expandtab
 set tabstop=4
 set softtabstop=4
@@ -15,8 +24,11 @@ set smartindent
 set modifiable
 set backspace=indent,eol,start 
 set linebreak
+set foldmethod=indent
+set foldlevel=99
 nmap <C-e> :e#<CR>
 imap jk <Esc> 
+vmap jk <Esc> 
 map <leader>c <c-_><c-_>
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 "inoremap <Nul> <C-n>
@@ -35,13 +47,23 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 "quick save
-noremap <C-Z> :update<C-R>
-vnoremap <C-Z> <C-C>:update<C-R>
-inoremap <C-Z> <C-O>:update<C-R>
+noremap <C-Z> :update<CR>
+vnoremap <C-Z> <C-C>:update<CR>
+inoremap <C-Z> <C-O>:update<CR>
 "sudo save
-command W w !sudo tee % >/dev/null
+"command W w !sudo tee % >/dev/null
 "sorting
 vnoremap <Leader>s :sort<CR>
+"easier viewing of code blocks
+vnoremap < <gv " better indentation
+vnoremap > >gv " better indentation
+"useful settings
+set history=700
+set undolevels=700
+"disable backup files and swp files
+set nobackup
+set nowritebackup
+set noswapfile
 "white space viewing
 set listchars="tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
@@ -58,10 +80,7 @@ set splitbelow
 set splitright
 "search
 nmap <leader>a <Esc>:Ack!
-"python stuff
-set foldmethod=indent
-set foldlevel=99
-" Add the virtualenv's site-packages to vim path
+"add the virtualenv's site-packages to vim path
 py << EOF
 import os.path
 import sys
