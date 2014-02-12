@@ -6,6 +6,7 @@ syntax on
 autocmd! bufwritepost .vimrc source %
 "rebind leader key
 let mapleader=","
+set ttymouse=xterm2
 set hidden "hidden buffers enabled
 set number "line number
 set mouse=a "mouse clickable
@@ -28,7 +29,7 @@ set foldmethod=indent
 set foldlevel=99
 nmap <C-e> :e#<CR>
 imap jk <Esc> 
-vmap jk <Esc> 
+vno ~/.xmobarrcM Ìmap jk <Esc> 
 map <leader>c <c-_><c-_>
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 "inoremap <Nul> <C-n>
@@ -50,6 +51,8 @@ nnoremap <C-H> <C-W><C-H>
 noremap <C-Z> :update<CR>
 vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
+"nerd tree
+nmap <silent> <special> <C-t> :NERDTreeToggle<RETURN>
 "sudo save
 "command W w !sudo tee % >/dev/null
 "sorting
@@ -70,11 +73,7 @@ set list
 set splitbelow
 set splitright
 set clipboard=unnamedplus
-"swap colon and semi-colon
-nnoremap ; :
-nnoremap : ;
 autocmd vimenter * NERDTree | wincmd p
-nmap <silent> <special> <C-t> :NERDTreeToggle<RETURN>
 "split
 set splitbelow
 set splitright
@@ -146,3 +145,7 @@ onoremap <silent> [l :call NextIndent(0, 0, 0, 1)<CR>
 onoremap <silent> ]l :call NextIndent(0, 1, 0, 1)<CR>
 onoremap <silent> [L :call NextIndent(1, 0, 1, 1)<CR>
 onoremap <silent> ]L :call NextIndent(1, 1, 1, 1)<CR>
+""" KEEP THIS AT THE BOTTOM """
+"swap colon and semi-colon
+" nnoremap ; :
+" nnoremap : ;

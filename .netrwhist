@@ -1,7 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/home/lope/Save22/server/Save22-Oscar-Backend'
 let g:netrw_dirhist_2='/home/lope/Save22/server/Lobang-Club-Django-Backend'
 let g:netrw_dirhist_3='/home/lope/Save22/server/Save22-Oscar-Backend'
 let g:netrw_dirhist_4='/home/lope/Save22/server/Save22-Oscar-Backend/save22oscar'
 let g:netrw_dirhist_5='/home/lope/Save22/server/Save22-Oscar-Backend'
+let g:netrw_dirhist_6='/home/lope/Save22/server/Save22-Oscar-Backend/save22oscar'
+let g:netrw_dirhist_7='/home/lope/Save22/server/Save22-Oscar-Backend'
