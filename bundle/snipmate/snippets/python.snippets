@@ -4,8 +4,7 @@ snippet #!
 snippet imp
 	import ${1:module}
 snippet fro 
-	from ${1:module} import ${1:module}
-# Module Docstring
+	from ${1:module} import ${2:module}
 # Module Docstring
 snippet docs
 	'''
@@ -88,7 +87,7 @@ snippet ifmain
 snippet _
 	__${1:init}__${2}
 snippet pdb
-    import pdb
+	import pdb
 	pdb.set_trace()
 snippet ass
 	assert False
