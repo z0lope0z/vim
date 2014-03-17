@@ -83,6 +83,7 @@ set splitright
 "search
 nmap <leader>a <Esc>:Ack!
 "pep8
+autocmd BufNewFile,BufRead *.py set ft=python
 autocmd BufWritePost *.py call Flake8()
 "add the virtualenv's site-packages to vim path
 py << EOF
